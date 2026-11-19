@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benella Joyería</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf9f6; /* Color de fondo claro */
+            color: #333;
+        }
+        .header-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        .description-box {
+            text-align: center;
+            padding: 20px 40px;
+            margin: -40px auto 30px auto;
+            background: white;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            position: relative;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .categories-title {
+            text-align: center;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        .categories-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .category-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+        .category-square {
+            width: 120px;
+            height: 120px;
+            background-color: #fcfcf4; /* Color crema de las cajas */
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .category-box:hover .category-square {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .large-box {
+            width: 80%;
+            max-width: 800px;
+            height: 250px;
+            background-color: #fcfcf4;
+            border: 1px solid #ccc;
+            margin: 0 auto 50px auto;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            border-top: 1px solid #eee;
+        }
+        .footer-logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        /* Iconos de prueba (puedes usar imágenes reales luego) */
+        .icon {
+            width: 24px; height: 24px;
+            background: #333;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Imagen de cabecera (usando tu imagen 1) -->
+    <img src="image_eb7204.jpg" alt="Benella Joyería" class="header-image">
+
+    <!-- Texto de descripción -->
+    <div class="description-box">
+        Piezas diseñadas para perdurar. Nuestra joyería combina metales preciosos y gemas seleccionadas para resaltar tu brillo natural en cada ocasión especial.
+    </div>
+
+    <h2 class="categories-title">CATEGORIAS</h2>
+
+    <!-- Contenedor de categorías con los enlaces a las otras páginas -->
+    <div class="categories-container">
+        <a href="anillos.html" class="category-box">
+            <div class="category-square">Anillos</div>
+        </a>
+        <a href="collares.html" class="category-box">
+            <div class="category-square">Collares</div>
+        </a>
+        <a href="pulseras.html" class="category-box">
+            <div class="category-square">Pulseras</div>
+        </a>
+        <a href="aretes.html" class="category-box">
+            <div class="category-square">Aretes</div>
+        </a>
+    </div>
+
+    <!-- Caja grande debajo de las categorías (como en el diseño) -->
+    <div class="large-box"></div>
+
+    <footer>
+        <div class="footer-logo">BENELLA</div>
+        <div class="social-icons">
+            <span class="icon"></span>
+            <span class="icon"></span>
+            <span class="icon"></span>
+        </div>
+    </footer>
+
+</body>
+</html>
